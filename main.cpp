@@ -1,15 +1,7 @@
-#include <stdio.h>
+#include <iostream>
+using namespace std;
 
-int main()
-{
-      printf( "Hello World\n");
-      return 0;
+int main() {
+  cout << "Hello World!";
+  return 0;
 } 
-
-
-#include <stdio.h>
-int main()
-{
-
-    return 0;
-}
