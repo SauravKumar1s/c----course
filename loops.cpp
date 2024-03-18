@@ -1,16 +1,41 @@
+// #include <iostream>
+// using namespace std;
+
+// int main()
+// {
+//     for (int i = 1; i < 10; i++)
+//     {
+//         cout << "table" <<  << "\n";
+
+//         for (int j = 1; j < 10 ; j++)
+//         {
+//             cout << i << "x"  << j << " = " << i*j << "\n";
+//         }
+
+//     }
+// }
+
 #include <iostream>
 using namespace std;
 
 int main()
 {
-    for (int i = 1; i < 10; i++)
-    {
-        cout << "table" <<  << "\n";
+    int userInput;
 
-        for (int j = 1; j < 10 ; j++)
+    cout << "Enter a number to print its multiplication table (1-10): ";
+    cin >> userInput;
+
+    if (userInput >= 1 && userInput <= 10)
+    {
+        for (int i = 1; i < 11; i++)
         {
-            cout << i << "x"  << j << " = " << i*j << "\n";
+            cout << userInput << " x " << i << " = " << userInput * i << "\n";
         }
-        
     }
+    else
+    {
+        cout << "Invalid input. Please enter a number between 1 and 10.\n";
+    }
+
+    return 0;
 }
