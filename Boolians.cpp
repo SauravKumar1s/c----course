@@ -11,3 +11,4 @@ int main () {
 }
 
 // here is that is true then will return 0 if not then will return 1 
+// and if value will be equal then will return 1 
